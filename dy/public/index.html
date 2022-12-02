@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="icon" href="">
     <title>도영달글 미궁게임</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript">
+      $(document).ready(function(){
+          $(document).on('keydown',function(e){
+              if ( e.keyCode == 123) {  
+                  e.preventDefault();
+                  e.returnValue = false;
+              }
+          });
+      });
+
+      document.onmousedown=disableclick;
+      status="마우스오른쪽 클릭금지.";
+      function disableclick(event){
+          if (event.button==2) {
+              alert(status);
+              return false;
+          }
+      }
+      </script>
   </head>
-  <body>
+  <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <div id="app"></div>
   </body>
 </html>
