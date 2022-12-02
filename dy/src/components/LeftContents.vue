@@ -14,7 +14,7 @@
             <div class="profile_img"></div>
             <div class="profile_text">
               <p>김도영의 미니홈피입니다 @.@</p>
-              <p>방명록 남기구 가!!!</p>
+              <p>방명록 남기구 가!</p>
             </div>
           </div>
           <div class="history">
