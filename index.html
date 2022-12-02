@@ -4,7 +4,26 @@
   <meta charset="UTF-8">
   <title>도영달글 미궁게임</title>
 </head>
-<frameset rows="*" border="0" >
-<frame src="main.html" scrolling="no" marginwidth="0" marginheight="0" noresize> //여기가 실제로 페이지가 이동되는 프레임
-</frameset>
+<script type="text/javascript">
+  $(document).ready(function(){
+      $(document).on('keydown',function(e){
+          if ( e.keyCode == 123) {  
+              e.preventDefault();
+              e.returnValue = false;
+          }
+      });
+  });
+
+  document.onmousedown=disableclick;
+  status="마우스오른쪽 클릭금지.";
+  function disableclick(event){
+      if (event.button==2) {
+          alert(status);
+          return false;
+      }
+  }
+  </script>
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+
+</body>
 </html>
