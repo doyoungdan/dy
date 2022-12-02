@@ -23,7 +23,7 @@
   z-index: 100;  
   width: 36px;
   height: 52px;
-  background: url(../dy/public/images/spring.png) no-repeat center;  
+  background: url(../images/spring.png) no-repeat center;  
 }
 
 .spring p:last-child {
@@ -33,7 +33,7 @@
   z-index: 100;  
   width: 36px;
   height: 52px;
-  background: url(../dy/public/images/spring.png) no-repeat center;  
+  background: url(../images/spring.png) no-repeat center;  
 }
 
 
@@ -136,7 +136,7 @@
 .profile .today span::after {
   content: '';
   display: inline-block;
-  background: url(../dy/public/images/ico_rabbit.png) no-repeat center;
+  background: url(../images/ico_rabbit.png) no-repeat center;
   width: 14px;
   height: 14px;
   margin-left: 10px;
@@ -225,7 +225,7 @@
   cursor: pointer;
   width: 100%;
   padding: 3%;
-  background: url(../dy/public/images/select_bg.png) no-repeat right;
+  background: url(../images/select_bg.png) no-repeat right;
   border: 1px solid #cecece;
   color: #777;
   -webkit-appearance: none;
